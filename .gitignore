@@ -16,6 +16,7 @@ ipython_config.py
 venv/
 data/raw/*
 data/processed/*
+reports/*.html
 
 !data/raw/.gitkeep
 !*/.gitkeep
