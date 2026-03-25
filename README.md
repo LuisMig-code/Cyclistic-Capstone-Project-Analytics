@@ -202,7 +202,6 @@ pytest tests/
 
 ## 🙏 Acknowledgments
 
-- Google Data Analytics Professional Certificate
 - Cyclistic (Divvy) for providing the dataset
 - Kaggle community for data hosting
 - Open source Python data science ecosystem
