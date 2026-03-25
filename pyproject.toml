@@ -1,0 +1,50 @@
+[project]
+name = "cyclistic-capstone-project"
+version = "0.1.0"
+description = "Data analytics and dashboard project for Cyclistic case study, including pipelines, notebooks, and reporting."
+authors = [
+    { name = "Luis Miguel" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas==3.0.0",
+    "numpy==2.4.1",
+    "matplotlib==3.10.8",
+    "seaborn==0.13.2",
+    "plotly==6.5.2",
+    "pydeck==0.9.1",
+    "requests==2.32.5",
+    "httpx==0.28.1",
+    "beautifulsoup4==4.14.3",
+    "tqdm==4.67.1",
+    "pillow==12.1.0",
+    "voila==0.5.11",
+    "jupyterlab==4.5.3",
+    "notebook==7.5.2"
+]
+
+[project.optional-dependencies]
+
+dev = [
+    "ipykernel",
+    "pytest",
+    "black",
+    "ruff"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
